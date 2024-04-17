@@ -6355,7 +6355,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #0BCEAF !important;
+  background-color: rgba(255, 215, 0, 0.6) !important; /* RGBA значення, де 0.8 визначає прозорість (від 0 до 1) */
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9960,7 +9960,7 @@ h6,
 }
 
 .testimonial-carousel .owl-dot.active {
-  background: #0BCEAF;
+  background: #ffd700;
 }
 
 .blog-date {

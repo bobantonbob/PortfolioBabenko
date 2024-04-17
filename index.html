@@ -222,6 +222,9 @@
                             </a>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <a href="https://anma-electric.com.ua/" class="btn btn-outline-primary">Go to Project</a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
                     <div class="position-relative overflow-hidden mb-2">
@@ -232,6 +235,9 @@
                             </a>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <a href="https://enigma-dent.com.ua/" class="btn btn-outline-primary">Go to Project</a>
+                    </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item">
                     <div class="position-relative overflow-hidden mb-2">
@@ -241,6 +247,9 @@
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="https://sanya-anton.kyiv.ua/" class="btn btn-outline-primary">Go to Project</a>
                     </div>
                 </div>
             </div>
@@ -383,7 +392,7 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="" novalidate="novalidate" action="https://api.web3forms.com/submit" method="POST">
+                        <form name="sentMessage" id="" class="needs-validation"  novalidate="novalidate" action="https://api.web3forms.com/submit" method="POST">
                             <input type="hidden" name="access_key" value="fd04c96e-3654-4481-80bc-d02c2f5b00c3">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
@@ -457,6 +466,22 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.forms["sentMessage"];
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        });
+    </script>
+    
+
+
+</body>
 </html>
+
