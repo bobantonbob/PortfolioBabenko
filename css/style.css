@@ -9866,7 +9866,7 @@ h6,
   width: 0;
   height: 0;
   left: -1px;
-  border-left: 16px solid #0BCEAF;
+  border-left: 16px solid #ffd700;
   border-top: 11px solid transparent;
   border-bottom: 11px solid transparent;
 }
@@ -9993,3 +9993,4 @@ h6,
 .container-footer {
   background: linear-gradient(#007bff, #ffd700); /* Створюємо вертикальний градієнт від синього до жовтого */
 }
+
