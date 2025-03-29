@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #00a6ff;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -9992,5 +9992,47 @@ h6,
 
 .container-footer {
   background: linear-gradient(#007bff, #ffd700); /* Створюємо вертикальний градієнт від синього до жовтого */
+}
+
+
+
+@media (min-width: 768px) {
+  .portfolio-item {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+body {
+  background-color: #b2bcc0;
+  color: #f1f1f1;
+}
+
+
+.portfolio-item .position-relative {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-item img {
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* (опційно) Ефект при наведенні */
+.portfolio-item:hover img {
+  transform: scale(1.02);
+}
+
+
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent !important;
+}
+
+.navbar.scrolled {
+    background-color: #111827 !important; /* темно-сірий */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
